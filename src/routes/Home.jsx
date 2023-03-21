@@ -1,10 +1,17 @@
-import harvardArt from '../data/harvardArt'
+import { NavLink } from "react-router-dom";
 
 export default function Home() {
-  console.log(harvardArt)
-    return (
+  return (
+    <>
       <div className="App">
-        <h1>Hello From App</h1>
+        <h2>Harvard Art Museum</h2>
+        <p>
+          Look, but Don't Touch. Please select Gallery in the navigation bar
+        </p>
+        <nav>
+          <NavLink to="/galleries">Gallery</NavLink>
+        </nav>
       </div>
-    );
-  }
+    </>
+  );
+}
